@@ -1,0 +1,24 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F1E9; /* Ajout de la couleur de fond */
+}
+
+.titre-principal {
+    text-align: center;
+    text-decoration: underline red; /* Soulignement en rouge */
+    color: black; /* Couleur du texte en noir */
+}
+
+.activite {
+    margin-bottom: 20px;
+}
+
+.activite p {
+    margin: 10px; /* Petite marge autour des paragraphes à l'intérieur de .activite */
+}
+
+.activite a {
+    margin-left: 10px; /* Marge à gauche pour les liens à l'intérieur de .activite */
+}
