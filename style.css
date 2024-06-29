@@ -1,0 +1,60 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F1E9;
+}
+
+.titre-principal {
+    text-align: center;
+    text-decoration: underline red;
+    color: black;
+}
+
+.sous-titre {
+    text-align: left;
+    margin-top: 30px; /* Ajustement de l'espace entre les chapitres */
+    margin-bottom: 20px; /* Ajustement de l'espace entre les chapitres et les activités */
+}
+
+.activite {
+    margin-bottom: 20px;
+    background-color: #FFFFFF; /* Fond blanc pour les activités */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.activite p {
+    margin: 10px 0; /* Ajustement de la marge autour des paragraphes */
+}
+
+.activite a {
+    margin-left: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.spacer {
+    height: 30px; /* Espace supplémentaire entre Les Musées et Les Plages */
+}
