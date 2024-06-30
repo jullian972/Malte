@@ -9,6 +9,7 @@
 <body>
   <h1 class="titre-principal">Activités à Malte</h1>
 
+  <!-- Section existante : Les Musées -->
   <h2 class="sous-titre">Les Musées :</h2>
 
   <div class="activite">
@@ -46,6 +47,7 @@
 
   <div class="spacer"></div>
 
+  <!-- Section existante : Les Plages -->
   <h2 class="sous-titre">Les Plages :</h2>
 
   <div class="activite">
@@ -81,6 +83,59 @@
     </div>
   </div>
 
+  <div class="spacer"></div>
+
+  <!-- Nouvelle section : Les Activités Nautiques -->
+  <h2 class="sous-titre">Les Activités Nautiques :</h2>
+
+  <div class="activite">
+    <p>- Snorkeling :</p>
+    <p>Pour ceux qui préfèrent rester plus près de la surface, le snorkeling est une excellente option. Les eaux cristallines autour de Malte offrent une visibilité exceptionnelle. (En gros c'est comme de la plongée, juste tu as un masque et un tuba)</p>
+    <button class="btn" onclick="toggleDetails('snorkeling-details')">Voir plus</button>
+    <div id="snorkeling-details" style="display:none;">
+        <p>Lieux : Blue Lagoon (Comino) / St Peter's Pool</p>
+        <p>Prix : Environ 50 € / Environ 20 €</p>
+        <p>Lien : (Blue Lagoon) <a href="https://www.google.com/search?q=blue+lagoon+snorkeling">https://www.google.com/search?q=blue+lagoon+snorkeling</a></p>
+        <p>(St Peter's Pool) <a href="https://www.google.com/search?q=st+peter%27s+pool+snorkeling">https://www.google.com/search?q=st+peter%27s+pool+snorkeling</a></p>
+    </div>
+  </div>
+
+  <div class="activite">
+    <p>- Bouées Tractées / Banana Boat :</p>
+    <p>Les bouées tractées sont une activité populaire à Malte, offrant une expérience excitante sur l'eau.</p>
+    <button class="btn" onclick="toggleDetails('bouees-details')">Voir plus</button>
+    <div id="bouees-details" style="display:none;">
+        <p>Lieux : Golden Bay / St Julian's / Mellieha Bay</p>
+        <p>Prix : Environ 20-30 € max (J'ai pas regardé en période de vacance)</p>
+        <p>Lien : (Golden Bay) <a href="https://www.google.com/search?q=Bou%C3%A9es+Tract%C3%A9es+golden+bay">https://www.google.com/search?q=Bou%C3%A9es+Tract%C3%A9es+golden+bay</a></p>
+        <p>(St Julian's) <a href="https://www.google.com/search?q=Bou%C3%A9es+Tract%C3%A9es+st+Julian%27s">https://www.google.com/search?q=Bou%C3%A9es+Tract%C3%A9es+st+Julian%27s</a></p>
+        <p>(Mellieha Bay) <a href="https://www.google.com/search?q=mellieha+bay+banana+boat">https://www.google.com/search?q=mellieha+bay+banana+boat</a></p>
+    </div>
+  </div>
+
+  <div class="activite">
+    <p>- Splash & Fun Water Park :</p>
+    <p>Le principal parc aquatique de Malte, Splash & Fun, propose une variété de toboggans, de piscines et d'attractions pour tous les âges. Le parc comprend une rivière paresseuse, une piscine à vagues et plusieurs grandes glissades.</p>
+    <button class="btn" onclick="toggleDetails('splash-details')">Voir plus</button>
+    <div id="splash-details" style="display:none;">
+        <p>Lieu : Bahar ic-Caghaq (14 min en voiture)</p>
+        <p>Prix : Environ 20-25 € par personne</p>
+        <p>Lien : <a href="https://www.splash.mt/">https://www.splash.mt/</a></p>
+    </div>
+  </div>
+
+  <div class="activite">
+    <p>- Aquaventure :</p>
+    <p>Aquaventure propose une variété d'activités nautiques amusantes, y compris le wakeboard, le ski nautique et le parachute ascensionnel. Ils offrent également des tours en bateau et des excursions pour découvrir les grottes marines et les criques cachées de Malte.</p>
+    <button class="btn" onclick="toggleDetails('aquaventure-details')">Voir plus</button>
+    <div id="aquaventure-details" style="display:none;">
+        <p>Lieu : St. Julian's (37 min en voiture)</p>
+        <p>Prix : 50-70 € (parachute ascensionnel)</p>
+        <p>Lien : <a href="https://www.aquaventuremalta.com/">https://www.aquaventuremalta.com/</a></p>
+    </div>
+  </div>
+
+  <!-- JavaScript pour basculer l'affichage des détails -->
   <script src="script.js"></script>
 </body>
 </html>
