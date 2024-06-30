@@ -2,7 +2,7 @@ body {
     font-family: 'Comic Sans MS', cursive;
     margin: 0;
     padding: 0;
-    background-color: #F4F1E9; /* Ajout de la couleur de fond */
+    background-color: #F4F1E9; /* Couleur de fond */
 }
 
 .titre-principal {
@@ -45,7 +45,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #0056B3;
 }
 
 .btn:focus {
