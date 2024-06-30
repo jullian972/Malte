@@ -3,139 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Activités à Malte</title>
 </head>
 <body>
-  <h1 class="titre-principal">Activités à Malte</h1>
+  <header>
+    <h1 class="titre-principal">MALTE</h1>
+  </header>
+  <main>
+    <section>
+      <h2 class="sous-titre">Les Musées :</h2>
+      <div class="activite">
+        <p>- Malta National Aquarium :</p>
+        <p>Situé à Qawra (25min en voiture), cet aquarium offre une expérience immersive avec des expositions interactives sur la vie marine méditerranéenne et tropicale. C’est une sortie éducative et amusante pour les jeunes.</p>
+        <button class="btn" onclick="toggleDetails('aquarium-details')">Voir plus</button>
+        <div id="aquarium-details" class="details">
+          <p>Prix : 13€95/16€.90</p>
+          <p>Horaire : 10h à 20h 7/7j</p>
+          <p>Lien : <a href="https://www.aquarium.com.mt/visit/">https://www.aquarium.com.mt/visit/</a></p>
+        </div>
+      </div>
 
-  <!-- Section existante : Les Musées -->
-  <h2 class="sous-titre">Les Musées :</h2>
+      <div class="activite">
+        <p>- Esplora Interactive Science Centre (planetarium) :</p>
+        <p>Situé à Kalkara (18 min en voiture), Esplora est un centre de science interactif avec de nombreuses expositions et activités pratiques. Il encourage l'exploration et l'apprentissage de la science de manière ludique.</p>
+        <button class="btn" onclick="toggleDetails('esplora-details')">Voir plus</button>
+        <div id="esplora-details" class="details">
+          <p>Prix : 8€</p>
+          <p>Horaire : 9h à 15h du mardi au vendredi / 10h à 17h samedi & dimanche</p>
+          <p>Lien : <a href="https://esplora.org.mt/prices/">https://esplora.org.mt/prices/</a></p>
+        </div>
+      </div>
 
-  <div class="activite">
-    <p>- Malta National Aquarium :</p>
-    <p>Situé à Qawra (25min en voiture), cet aquarium offre une expérience immersive avec des expositions interactives sur la vie marine méditerranéenne et tropicale. C’est une sortie éducative et amusante pour les jeunes.</p>
-    <button class="btn" onclick="toggleDetails('aquarium-details')">Voir plus</button>
-    <div id="aquarium-details" style="display:none;">
-        <p>Prix : 13€95/16€.90</p>
-        <p>Horaire : 10h à 20h 7/7j</p>
-        <p>Lien : <a href="https://www.aquarium.com.mt/visit/">https://www.aquarium.com.mt/visit/</a></p>
-    </div>
-  </div>
+      <div class="activite">
+        <p>- Mdina dungeons :</p>
+        <p>Situé à Mdina (21 min en voiture), cette attraction propose une visite souterraine avec des scènes recréées de l'histoire médiévale de Malte. C’est une expérience à la fois éducative et légèrement effrayante, qui peut plaire aux jeunes curieux.</p>
+        <button class="btn" onclick="toggleDetails('mdina-details')">Voir plus</button>
+        <div id="mdina-details" class="details">
+          <p>Prix : 5€</p>
+          <p>Horaire : 10h à 16h du lundi au vendredi / 9h30 à 16h30 samedi & dimanche</p>
+          <p>Lien : <a href="https://www.mdinadungeons.com/">https://www.mdinadungeons.com/</a></p>
+        </div>
+      </div>
+    </section>
 
-  <div class="activite">
-    <p>- Esplora Interactive Science Centre (planetarium) :</p>
-    <p>Situé à Kalkara (18 min en voiture), Esplora est un centre de science interactif avec de nombreuses expositions et activités pratiques. Il encourage l'exploration et l'apprentissage de la science de manière ludique.</p>
-    <button class="btn" onclick="toggleDetails('esplora-details')">Voir plus</button>
-    <div id="esplora-details" style="display:none;">
-        <p>Prix : 8€</p>
-        <p>Horaire : 9h à 15h du mardi au vendredi / 10h à 17h samedi & dimanche</p>
-        <p>Lien : <a href="https://esplora.org.mt/prices/">https://esplora.org.mt/prices/</a></p>
-    </div>
-  </div>
+    <section>
+      <h2 class="sous-titre">Les Plages :</h2>
+      <div class="activite">
+        <p>- Golden Bay (30min en voiture) :</p>
+        <p>Située sur la côte nord-ouest de l'île, Golden Bay est célèbre pour son sable doré et ses eaux claires. C'est l'une des plages les plus populaires de Malte, offrant une vue magnifique sur la mer Méditerranée et des couchers de soleil spectaculaires.</p>
+        <button class="btn" onclick="toggleDetails('golden-bay-details')">Voir plus</button>
+        <div id="golden-bay-details" class="details">
+          <p>Prix : Gratuit</p>
+          <p>Horaire : Lucia on y restera très tard...</p>
+          <p>Lien : <a href="https://www.google.com/search?q=Golden+Bay">https://www.google.com/search?q=Golden+Bay</a></p>
+        </div>
+      </div>
 
-  <div class="activite">
-    <p>- Mdina dungeons :</p>
-    <p>Situé à Mdina (21 min en voiture), cette attraction propose une visite souterraine avec des scènes recréées de l'histoire médiévale de Malte. C’est une expérience à la fois éducative et légèrement effrayante, qui peut plaire aux jeunes curieux.</p>
-    <button class="btn" onclick="toggleDetails('mdina-details')">Voir plus</button>
-    <div id="mdina-details" style="display:none;">
-        <p>Prix : 5€</p>
-        <p>Horaire : 10h à 16h du lundi au vendredi / 9h30 à 16h30 samedi & dimanche</p>
-        <p>Lien : <a href="https://www.mdinadungeons.com/">https://www.mdinadungeons.com/</a></p>
-    </div>
-  </div>
+      <div class="activite">
+        <p>- Mellieha Bay (Ghadira Bay) (38min en voiture) :</p>
+        <p>Mellieha Bay, également connue sous le nom de Ghadira Bay, est la plus grande plage de sable à Malte. Elle est idéale pour les familles et les amateurs de sports nautiques en raison de ses eaux peu profondes et de ses installations bien aménagées.</p>
+        <button class="btn" onclick="toggleDetails('mellieha-bay-details')">Voir plus</button>
+        <div id="mellieha-bay-details" class="details">
+          <p>Prix : Gratuit</p>
+          <p>Horaire : Après Lucia, Ludivine sa sera a ton tour...</p>
+          <p>Lien : <a href="https://www.google.com/search?q=Mellieha+Bay+%28Ghadira+Bay%29">https://www.google.com/search?q=Mellieha+Bay+%28Ghadira+Bay%29</a></p>
+        </div>
+      </div>
 
-  <div class="spacer"></div>
+      <div class="activite">
+        <p>- Gnejna Bay (30min en voiture) :</p>
+        <p>Nichée entre des falaises escarpées, Gnejna Bay offre un cadre naturel magnifique avec son sable doré et ses eaux cristallines. C'est un endroit idéal pour échapper à la foule et profiter de la nature.</p>
+        <button class="btn" onclick="toggleDetails('gnejna-bay-details')">Voir plus</button>
+        <div id="gnejna-bay-details" class="details">
+          <p>Prix : Gratuit</p>
+          <p>Horaire : Je rigolais Ludivine appelle pas ton mec stp</p>
+          <p>Lien : <a href="https://www.google.com/search?q=Gnejna+Bay">https://www.google.com/search?q=Gnejna+Bay</a></p>
+        </div>
+      </div>
+    </section>
 
-  <!-- Section existante : Les Plages -->
-  <h2 class="sous-titre">Les Plages :</h2>
+    <section>
+      <h2 class="sous-titre">Les Activités Nautiques :</h2>
+      <div class="activite">
+        <p>- Snorkeling :</p>
+        <p>Pour ceux qui préfèrent rester plus près de la surface, le snorkeling est une excellente option. Les eaux cristallines autour de Malte offrent une visibilité exceptionnelle. (En gros c'est comme de la plongée, juste tu as un masque et un tuba)</p>
+        <button class="btn" onclick="toggleDetails('snorkeling-details')">Voir plus</button>
+        <div id="snorkeling-details" class="details">
+          <p>Lieux : Blue Lagoon (Comino) / St Peter's Pool</p>
+          <p>Prix : Environ 50 € / Environ 20 €</p>
+          <p>Lien : (Blue Lagoon) <a href="https://www.google.com/search?q=blue+lagoon+snorkeling">https://www.google.com/search?q=blue+lagoon+snorkeling</a></p>
+          <p>(St Peter's Pool) <a href="https://www.google.com/search?q=st+peter%27s+pool+snorkeling">https://www.google.com/search?q=st+peter%27s+pool+snorkeling</a></p>
+        </div>
+      </div>
 
-  <div class="activite">
-    <p>- Golden Bay (30min en voiture) :</p>
-    <p>Située sur la côte nord-ouest de l'île, Golden Bay est célèbre pour son sable doré et ses eaux claires. C'est l'une des plages les plus populaires de Malte, offrant une vue magnifique sur la mer Méditerranée et des couchers de soleil spectaculaires.</p>
-    <button class="btn" onclick="toggleDetails('golden-bay-details')">Voir plus</button>
-    <div id="golden-bay-details" style="display:none;">
-        <p>Prix : Gratuit</p>
-        <p>Horaire : Lucia on y restera très tard...</p>
-        <p>Lien : <a href="https://www.google.com/search?q=Golden+Bay">https://www.google.com/search?q=Golden+Bay</a></p>
-    </div>
-  </div>
+      <div class="activite">
+        <p>- Bouées Tractées / Banana Boat :</p>
+        <p>Les bouées tractées sont une activité populaire à Malte, offrant une expérience excitante sur l'eau.</p>
+        <button class="btn" onclick="toggleDetails('bouees-details')">Voir plus</button>
+        <div id="bouees-details" class="details">
+          <p>Lieux : Golden Bay / St Julian's / Mellieha Bay</p>
+          <p>Prix : Environ 20-30 € max (J'ai pas regardé en période de vacance)</p>
+          <p>Lien : (Golden Bay) <a href="https://www.google.com/search?q=Bou%C3%A9es+Tract%C3%A9es+golden+bay">https://www.google.com/search?q=Bou%C3%A9es+Tract%C3%A9es+golden+bay</a></p>
+          <p>(St Julian's) <a href="https://www.google.com/search?q=Bou%C3%A9es+Tract%C3%A9es+St+Julian%27s">https://www.google.com/search?q=Bou%C3%A9es+Tract%C3%A9es+St+Julian%27s</a></p>
+          <p>(Mellieha Bay) <a href="https://www.google.com/search?q=Bou%C3%A9es+Tract%C3%A9es+Mellieha+Bay">https://www.google.com/search?q=Bou%C3%A9es+Tract%C3%A9es+Mellieha+Bay</a></p>
+        </div>
+      </div>
 
-  <div class="activite">
-    <p>- Mellieha Bay (Ghadira Bay) (38min en voiture) :</p>
-    <p>Mellieha Bay, également connue sous le nom de Ghadira Bay, est la plus grande plage de sable à Malte. Elle est idéale pour les familles et les amateurs de sports nautiques en raison de ses eaux peu profondes et de ses installations bien aménagées.</p>
-    <button class="btn" onclick="toggleDetails('mellieha-bay-details')">Voir plus</button>
-    <div id="mellieha-bay-details" style="display:none;">
-        <p>Prix : Gratuit</p>
-        <p>Horaire : Après Lucia, Ludivine sa sera a ton tour...</p>
-        <p>Lien : <a href="https://www.google.com/search?q=Mellieha+Bay+%28Ghadira+Bay%29">https://www.google.com/search?q=Mellieha+Bay+%28Ghadira+Bay%29</a></p>
-    </div>
-  </div>
+      <div class="activite">
+        <p>- Plongée Sous-marine :</p>
+        <p>Malte est réputée pour ses sites de plongée sous-marine exceptionnels, offrant une richesse marine unique à explorer.</p>
+        <button class="btn" onclick="toggleDetails('plongee-details')">Voir plus</button>
+        <div id="plongee-details" class="details">
+          <p>Lieux : Blue Grotto / Cirkewwa / Gozo</p>
+          <p>Prix : Environ 40-60 €</p>
+          <p>Lien : (Blue Grotto) <a href="https://www.google.com/search?q=plong%C3%A9e+Blue+Grotto">https://www.google.com/search?q=plong%C3%A9e+Blue+Grotto</a></p>
+          <p>(Cirkewwa) <a href="https://www.google.com/search?q=plong%C3%A9e+Cirkewwa">https://www.google.com/search?q=plong%C3%A9e+Cirkewwa</a></p>
+          <p>(Gozo) <a href="https://www.google.com/search?q=plong%C3%A9e+Gozo">https://www.google.com/search?q=plong%C3%A9e+Gozo</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Activités à Malte. Tous droits réservés.</p>
+  </footer>
 
-  <div class="activite">
-    <p>- Gnejna Bay (30min en voiture) :</p>
-    <p>Nichée entre des falaises escarpées, Gnejna Bay offre un cadre naturel magnifique avec son sable doré et ses eaux cristallines. C'est un endroit idéal pour échapper à la foule et profiter de la nature.</p>
-    <button class="btn" onclick="toggleDetails('gnejna-bay-details')">Voir plus</button>
-    <div id="gnejna-bay-details" style="display:none;">
-        <p>Prix : Gratuit</p>
-        <p>Horaire : Je rigolais Ludivine appelle pas ton mec stp</p>
-        <p>Lien : <a href="https://www.google.com/search?q=Gnejna+Bay">https://www.google.com/search?q=Gnejna+Bay</a></p>
-    </div>
-  </div>
-
-  <div class="spacer"></div>
-
-  <!-- Nouvelle section : Les Activités Nautiques -->
-  <h2 class="sous-titre">Les Activités Nautiques :</h2>
-
-  <div class="activite">
-    <p>- Snorkeling :</p>
-    <p>Pour ceux qui préfèrent rester plus près de la surface, le snorkeling est une excellente option. Les eaux cristallines autour de Malte offrent une visibilité exceptionnelle. (En gros c'est comme de la plongée, juste tu as un masque et un tuba)</p>
-    <button class="btn" onclick="toggleDetails('snorkeling-details')">Voir plus</button>
-    <div id="snorkeling-details" style="display:none;">
-        <p>Lieux : Blue Lagoon (Comino) / St Peter's Pool</p>
-        <p>Prix : Environ 50 € / Environ 20 €</p>
-        <p>Lien : (Blue Lagoon) <a href="https://www.google.com/search?q=blue+lagoon+snorkeling">https://www.google.com/search?q=blue+lagoon+snorkeling</a></p>
-        <p>(St Peter's Pool) <a href="https://www.google.com/search?q=st+peter%27s+pool+snorkeling">https://www.google.com/search?q=st+peter%27s+pool+snorkeling</a></p>
-    </div>
-  </div>
-
-  <div class="activite">
-    <p>- Bouées Tractées / Banana Boat :</p>
-    <p>Les bouées tractées sont une activité populaire à Malte, offrant une expérience excitante sur l'eau.</p>
-    <button class="btn" onclick="toggleDetails('bouees-details')">Voir plus</button>
-    <div id="bouees-details" style="display:none;">
-        <p>Lieux : Golden Bay / St Julian's / Mellieha Bay</p>
-        <p>Prix : Environ 20-30 € max (J'ai pas regardé en période de vacance)</p>
-        <p>Lien : (Golden Bay) <a href="https://www.google.com/search?q=Bou%C3%A9es+Tract%C3%A9es+golden+bay">https://www.google.com/search?q=Bou%C3%A9es+Tract%C3%A9es+golden+bay</a></p>
-        <p>(St Julian's) <a href="https://www.google.com/search?q=Bou%C3%A9es+Tract%C3%A9es+st+Julian%27s">https://www.google.com/search?q=Bou%C3%A9es+Tract%C3%A9es+st+Julian%27s</a></p>
-        <p>(Mellieha Bay) <a href="https://www.google.com/search?q=mellieha+bay+banana+boat">https://www.google.com/search?q=mellieha+bay+banana+boat</a></p>
-    </div>
-  </div>
-
-  <div class="activite">
-    <p>- Splash & Fun Water Park :</p>
-    <p>Le principal parc aquatique de Malte, Splash & Fun, propose une variété de toboggans, de piscines et d'attractions pour tous les âges. Le parc comprend une rivière paresseuse, une piscine à vagues et plusieurs grandes glissades.</p>
-    <button class="btn" onclick="toggleDetails('splash-details')">Voir plus</button>
-    <div id="splash-details" style="display:none;">
-        <p>Lieu : Bahar ic-Caghaq (14 min en voiture)</p>
-        <p>Prix : Environ 20-25 € par personne</p>
-        <p>Lien : <a href="https://www.splash.mt/">https://www.splash.mt/</a></p>
-    </div>
-  </div>
-
-  <div class="activite">
-    <p>- Aquaventure :</p>
-    <p>Aquaventure propose une variété d'activités nautiques amusantes, y compris le wakeboard, le ski nautique et le parachute ascensionnel. Ils offrent également des tours en bateau et des excursions pour découvrir les grottes marines et les criques cachées de Malte.</p>
-    <button class="btn" onclick="toggleDetails('aquaventure-details')">Voir plus</button>
-    <div id="aquaventure-details" style="display:none;">
-        <p>Lieu : St. Julian's (37 min en voiture)</p>
-        <p>Prix : 50-70 € (parachute ascensionnel)</p>
-        <p>Lien : <a href="https://www.aquaventuremalta.com/">https://www.aquaventuremalta.com/</a></p>
-    </div>
-  </div>
-
-  <!-- JavaScript pour basculer l'affichage des détails -->
   <script src="script.js"></script>
 </body>
 </html>
